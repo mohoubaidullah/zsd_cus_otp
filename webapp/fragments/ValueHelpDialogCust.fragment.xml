@@ -1,0 +1,13 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<SelectDialog
+		id="selectDialogCust"
+		title="Customers"
+		items="{/PayerSet}"
+		search=".onValueHelpSearchCust"
+		confirm=".onValueHelpCloseCust"
+		cancel=".onValueHelpCloseCust">
+		<StandardListItem
+			title="{PayerId}" 
+			description="{Name}" />
+	</SelectDialog>
+</core:FragmentDefinition>
